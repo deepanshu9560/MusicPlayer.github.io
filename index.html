@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Music Player</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
         integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
@@ -19,9 +19,9 @@
             <h2 id="title">All Black</h2>
             <h3 id="artist">Raftaar and Sukh-E</h3>
             <div class="img_container">
-                <img src="images/All_Black.jpg" alt="">
+                <img src="All_Black.jpg" alt="">
             </div>
-            <audio src="music/All_Black.mp3" controls></audio>
+            <audio src="All_Black.mp3" controls></audio>
 
             <!-- progress bar -->
             <div class="progressbar_container" id="progress_container">
@@ -109,8 +109,8 @@
             title.textContent = songs.title;
             console.log(songs)
             artist.textContent = songs.artist;
-            music.src = "music/" + songs.name + ".mp3";
-            img.src = "images/" + songs.name + ".jpg";
+            music.src = songs.name + ".mp3";
+            img.src = songs.name + ".jpg";
         }
 
         let songIndex = 0;
